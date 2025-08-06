@@ -44,7 +44,7 @@ async function loadFont(
 }
 
 export async function loadFontSans() {
-  // 1. Variable fonts (ถ้า browser รองรับ)
+  // 1. Variable fonts (if browser support)
   if (CSS.supports("font-variation-settings", "normal")) {
     try {
       const variableFontPromises = [
